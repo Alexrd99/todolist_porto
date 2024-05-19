@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="header">
+        <h2>My to-do list</h2>
+    </div>
+    <div class="todo-wrapper">
+        <p>Tambahkan list yang ingin anda capai/lakukan</p>
+        <div class="form">
+            <form name="todo-adder">
+                <input type="text" id="todo-entry-box" />
+            </form>
+            <button id="add-button" class="pretty-button">Add</button>
+        </div>
+        <div id="control-wrapper">
+            <button id="clear-button" onclick="clearCompletedToDoItems()" class="pretty-button">Clear Completed</button>
+            <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
+            <button id="save-button" onclick="saveList()" class="pretty-button">Save List</button>
+        </div>
+    </div>
+    <div class="todo-list">
+        <h4>List yang kamu akan capai</h4>
+        <ol id="todo-list">
+        </ol>
+        <p>Noted: Double Click pada list yang telah selesai untuk menandai</p>
+    </div>
+    <footer>
+        <p>&#169 2024.All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
